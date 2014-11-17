@@ -132,6 +132,9 @@ cairo_gl_surface_create_for_dc (cairo_device_t		*device,
 cairo_public cairo_device_t *
 cairo_egl_device_create (EGLDisplay dpy, EGLContext egl);
 
+cairo_public cairo_device_t *
+cairo_egl_device_create_for_egl_surface (EGLDisplay dpy, EGLContext egl, EGLSurface surface);
+
 cairo_public cairo_surface_t *
 cairo_gl_surface_create_for_egl (cairo_device_t	*device,
 				 EGLSurface	 egl,
